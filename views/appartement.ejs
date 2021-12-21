@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Liste des pièces de l'appartement</h1>
+    <p>
+        <% for(let i = 0; i < todot.length; i++) { %>
+            <p id="lignedepiece"><%= todot[i].name %></p>
+            <% } %>
+    </p>
+    <p id="lignetotale">
+        Surface totale :
+    </p>
+    <button class="button" onclick="window.location='/piece'">Encoder une autre pièce</button>
+</body>
+</html>
